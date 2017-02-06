@@ -15,6 +15,46 @@ public class MainActivity extends AppCompatActivity {
     private SensorManager sensorService;
     private Sensor sensor;
 
+    // m/s**2
+    private static final int ACCELEROMETER_X = 0;
+    private static final int ACCELEROMETER_Y = 1;
+    private static final int ACCELEROMETER_Z = 2;
+
+    // m/s**2
+    private static final int GRAVITY_X = 0;
+    private static final int GRAVITY_Y = 1;
+    private static final int GRAVITY_Z = 2;
+
+    // rad/s
+    private static final int GYROSCOPE_X = 0;
+    private static final int GYROSCOPE_Y = 1;
+    private static final int GYROSCOPE_Z = 2;
+
+    // rad/s
+    private static final int GYROSCOPE_UNCALIBRATED_X = 0;
+    private static final int GYROSCOPE_UNCALIBRATED_Y = 1;
+    private static final int GYROSCOPE_UNCALIBRATED_Z = 2;
+    private static final int GYROSCOPE_UNCALIBRATED_DRIFT_X = 3;
+    private static final int GYROSCOPE_UNCALIBRATED_DRIFT_Y = 4;
+    private static final int GYROSCOPE_UNCALIBRATED_DRIFT_Z = 5;
+
+    // m/s**2 (excluding gravity)
+    private static final int LINEAR_ACCELERATION_X = 0;
+    private static final int LINEAR_ACCELERATION_Y = 1;
+    private static final int LINEAR_ACCELERATION_Z = 2;
+
+    // Unitless
+    private static final int ROTATION_VECTOR_X = 0; // (x * sin(angle/2))
+    private static final int ROTATION_VECTOR_Y = 1; // (y * sin(angle/2))
+    private static final int ROTATION_VECTOR_Z = 2; // (z * sin(angle/2))
+    private static final int ROTATION_SCALAR = 3;   // ((cos(angle/2))
+
+    // Steps
+    private static final int STEP_COUNTER = 0;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
